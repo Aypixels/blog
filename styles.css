@@ -53,16 +53,9 @@ html {
   text-decoration: none;
 }
 
-body {
-  font-family: "Montserrat", sans-serif;
-  background-color: #f6f9fc;
-}
+body {  font-family: "Montserrat", sans-serif;  background-color: #101010;  background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop');  background-size: cover;  background-position: center;  background-repeat: no-repeat;  background-attachment: fixed;  position: relative;}body::before {  content: '';  position: absolute;  top: 0;  left: 0;  right: 0;  bottom: 0;  background: rgba(16, 16, 16, 0.85);  z-index: -1;}
 
-header {
-  background-color: #101010;
-  height: 100vh;
-  color: #fff;
-}
+header {  background-color: rgba(16, 16, 16, 0.3);  height: 100vh;  color: #fff;  backdrop-filter: blur(4px);}
 
 @media screen and (max-width: 1000px) {
   header {
@@ -129,19 +122,7 @@ header {
   }
 }
 
-.navbar {
-  position: fixed;
-  backdrop-filter: blur(10px);
-  background-color: #101010b9;
-  padding: 30px;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  box-sizing: border-box;
-  align-items: center;
-  transition: all 1.2s ease;
-  z-index: 1000;
-}
+.navbar {  position: fixed;  backdrop-filter: blur(8px);  background-color: rgba(16, 16, 16, 0.4);  padding: 30px;  display: flex;  justify-content: space-between;  width: 100%;  box-sizing: border-box;  align-items: center;  transition: all 1.2s ease;  z-index: 1000;}
 
 .navbar a {
   color: white;
@@ -205,10 +186,13 @@ header {
 }
 
 .presentation {
-  background-color: #f6f9fc;
+  background-color: rgba(16, 16, 16, 0.5);
   height: auto;
   padding: 30px;
   transition: all 2s ease;
+  backdrop-filter: blur(30px);
+  color: white;
+  margin: 0;
 }
 
 .presentation ul {
@@ -228,11 +212,7 @@ header {
   font-weight: 600;
 }
 
-.presentation h2 {
-  font-size: 2rem;
-  color: #101d30;
-  font-weight: bold;
-}
+.presentation h2 {  font-size: 2rem;  color: #638afd;  font-weight: bold;}
 
 @media screen and (max-width: 900px) {
     .presentation p {
@@ -247,10 +227,12 @@ header {
 }
 
 .projet {
-  background-color: #101010;
+  background-color: rgba(16, 16, 16, 0.5);
   height: auto;
   padding: 30px;
   transition: all 2s ease;
+  backdrop-filter: blur(30px);
+  margin: 0;
 }
 
 .projet h2 {
@@ -314,20 +296,17 @@ header {
 }
 
 .contact {
-  background-color: #f6f9fc;
+  background-color: rgba(16, 16, 16, 0.5);
   height: auto;
   padding: 30px;
-  color: black;
+  color: white;
   font-weight: 900;
   transition: all 2s ease;
+  backdrop-filter: blur(30px);
+  margin: 0;
 }
 
-.contact h2 {
-  font-size: 2rem;
-  color: #101d30;
-  font-weight: bold;
-  margin-bottom: 50px;
-}
+.contact h2 {  font-size: 2rem;  color: #638afd;  font-weight: bold;  margin-bottom: 50px;}
 
 .contact-content {
   display: flex;
@@ -358,17 +337,38 @@ header {
   height: auto;
 }
 
-.bar{
-  height: 35px;
-  background-color: #2548a9;
+.bar {
+  height: 5px;
+  background: linear-gradient(90deg, #2548a9, #638afd);
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  box-shadow: 0 0 25px rgba(37, 72, 169, 0.5);
+}
+
+.bar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    left: 100%;
+  }
 }
 
 #prestransi {
-    transform: rotate(-1deg) translateY(-19px);
+  transform: translateY(0);
 }
 
 #projtransi {
-    transform: rotate(-1deg) translateY(19px);
+  transform: translateY(0);
 }
 
 .container {
@@ -493,4 +493,74 @@ header {
 .CV #download:hover {
   border-radius: 50px;
   background-color: #4b4b4b;
+}
+
+.modern-footer {
+  background-color: rgba(16, 16, 16, 0.4);
+  backdrop-filter: blur(8px);
+  color: white;
+  padding: 40px 20px 20px;
+  margin: 0;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  padding: 0 20px;
+}
+
+.footer-section h3 {
+  color: #638afd;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #638afd;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-link img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.social-link:hover img {
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .social-links {
+    justify-content: center;
+  }
 }
