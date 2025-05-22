@@ -1022,3 +1022,243 @@ header {
         display: none;
     }
 }
+
+/* Responsive Design - Carousel */
+@media screen and (max-width: 1200px) {
+    .carousel-container {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .carousel-content {
+        flex-direction: column;
+    }
+
+    .carousel-image {
+        width: 100%;
+        height: 300px;
+    }
+
+    .carousel-text {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-container {
+        width: 100%;
+    }
+
+    .carousel-image {
+        height: 250px;
+    }
+
+    .carousel-button {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .carousel-text h3 {
+        font-size: 1.3em;
+    }
+
+    .carousel-text p {
+        font-size: 0.9em;
+    }
+
+    .carousel-dots {
+        bottom: 10px;
+    }
+
+    .carousel-dot {
+        width: 8px;
+        height: 8px;
+        margin: 0 4px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .carousel-image {
+        height: 200px;
+    }
+
+    .carousel-button {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+
+    .carousel-text {
+        padding: 15px;
+    }
+
+    .carousel-text h3 {
+        font-size: 1.2em;
+        margin-bottom: 8px;
+    }
+
+    .carousel-text p {
+        font-size: 0.85em;
+        line-height: 1.4;
+    }
+}
+
+/* Responsive Design - General */
+@media screen and (max-width: 1200px) {
+    .presentationVeille {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .Veille_content {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .presentationVeille h2 {
+        font-size: 1.8em;
+    }
+
+    .presentationVeille p {
+        font-size: 1em;
+        line-height: 1.6;
+    }
+
+    .Veille_content h2 {
+        font-size: 1.8em;
+    }
+
+    .bar {
+        height: 3px;
+        margin: 15px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .presentationVeille {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .presentationVeille h2 {
+        font-size: 1.5em;
+    }
+
+    .presentationVeille p {
+        font-size: 0.9em;
+    }
+
+    .Veille_content h2 {
+        font-size: 1.5em;
+    }
+
+    .bar {
+        height: 2px;
+        margin: 10px 0;
+    }
+}
+
+/* Responsive Design - Footer and Navigation */
+@media screen and (max-width: 1200px) {
+    .modern-footer {
+        padding: 40px 20px;
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .modern-footer {
+        padding: 30px 15px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .footer-section h3 {
+        font-size: 1.3em;
+    }
+
+    .footer-section p, .footer-section ul li {
+        font-size: 0.9em;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .social-link {
+        width: 35px;
+        height: 35px;
+    }
+
+    .social-link img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .navbar {
+        padding: 20px;
+    }
+
+    .nav-links {
+        background-color: rgba(16, 16, 16, 0.95);
+        backdrop-filter: blur(10px);
+    }
+
+    .nav-links ul li {
+        padding: 15px;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-links ul li:last-child {
+        border-bottom: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .modern-footer {
+        padding: 25px 10px;
+    }
+
+    .footer-section h3 {
+        font-size: 1.2em;
+    }
+
+    .footer-section p, .footer-section ul li {
+        font-size: 0.85em;
+    }
+
+    .social-link {
+        width: 30px;
+        height: 30px;
+        margin: 0 5px;
+    }
+
+    .social-link img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .navbar {
+        padding: 15px;
+    }
+
+    .nav-links ul li {
+        padding: 12px;
+        font-size: 1rem;
+    }
+}
