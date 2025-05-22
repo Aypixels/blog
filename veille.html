@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
@@ -39,7 +40,7 @@
     <header>
       <div class="present1">
         <h1>Veille Technologique</h1>
-        <h2>Comment l'émergence des outils no-code et des technologies d'IA redéfinit elle le rôle des développeurs web, et quelles sont les implications pour leur avenir professionnel ?</h2>
+        <h2>Comment l'émergence des outils no-code et des technologies d'IA redéfinit elle le rôle des développeurs web, et quelles sont les implications pour leur avenir professionnel ?</h2>
       </div>
     </header>
 
@@ -49,10 +50,10 @@
 
       <h2>Qu'est ce qu'une veille technologique ?</h2>
       <p>
-        La veille technologique est un processus systématique qui consiste à recueillir, analyser et diffuser des informations sur les innovations, les tendances et les technologies émergentes dans un domaine précis.
+        La veille technologique est un processus systématique qui consiste à recueillir, analyser et diffuser des informations sur les innovations, les tendances et les technologies émergentes dans un domaine précis.
         <br>
         <br>
-        Son objectif est de comprendre les changements qui se produisent dans l'environnement technologique et de prévoir leurs impacts sur une entreprise, une organisation ou un individu.
+        Son objectif est de comprendre les changements qui se produisent dans l'environnement technologique et de prévoir leurs impacts sur une entreprise, une organisation ou un individu.
         <br>
         <br>
         Elle permet de rester à jour sur les dernières technologies, de détecter les opportunités et de prévenir les menaces liées à l'évolution technologique.
@@ -61,49 +62,67 @@
 
     <div class="bar" id="prestransi"></div>
 
-    <div class="Veille_content">
-
+    <div class="Veille_content" id="veille">
         <h2>Veille technologique</h2>
-
-        <div class="veille" id="veille">
-          <div id="containerVeille" onclick="window.location = 'pagesVeille/veille1.html'">
-            <div id="imageVeille">
-                <img src="https://movework.fr/wp-content/uploads/2024/10/midsection-business-people-working-office-1-scaled-e1729258359173-1024x709.jpg" alt="">
-            </div>
-            <div id="texte">
-                <h1>Le No-Code : Une Révolution dans le Développement d'Applications</h1>
-                <p>Le no-code bouleverse le paysage technologique en permettant à des non-développeurs de créer des applications, des sites web ou des outils automatisés. Grâce à des interfaces visuelles intuitives, cette approche démocratise la technologie et accélère la transformation numérique.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="veille" id="veille">
         
-        <div id="containerVeille">
-          <div id="imageVeille">
-              <img src="https://images.ctfassets.net/lzny33ho1g45/5RVWTocIS5gifWznEG9adU/3f9ff27df830c7418c1a930da80e8120/best-no-code-app-builders.jpeg?w=1520&fm=avif&q=31&fit=thumb&h=760" alt="">
-          </div>
-          <div id="texte">
-              <h1>Les Meilleures Plateformes No-Code en 2025</h1>
-              <p>Les plateformes no-code se multiplient, chacune ayant ses spécificités. Voici un tour d’horizon des outils les plus populaires en 2025 et leurs cas d’usage.</p>
-          </div>
-        </div>
-      </div>
-      <div class="veille" id="veille">
-    
-        <div id="containerVeille">
-          <div id="imageVeille">
-              <img src="https://cdn.prod.website-files.com/65e7416cf8f1824784f010cf/65e7416cf8f1824784f019bc_642ed69f8d8b864ff9e23fd9_Nocode-Pros%252520and%252520Cons-p-800.webp" alt="">
-          </div>
-          <div id="texte">
-              <h1>No-Code et Low-Code : Avantages et Limites</h1>
-              <p>Le no-code et le low-code sont devenus des solutions prisées pour accélérer le développement d'applications. Cependant, il est essentiel de comprendre leurs avantages et leurs limites pour les utiliser à bon escient.</p>
-          </div>
-        </div>
-      </div>
+        <div class="carousel-container">
+            <div class="carousel-track">
+                <!-- Les articles seront dupliqués par JavaScript -->
+                <article class="carousel-slide" data-url="pagesVeille/veille2.html">
+                    <div class="carousel-content">
+                        <div class="carousel-image">
+                            <img src="https://raygun.com/blog/images/announcing-mcp/mcp-feature-image.webp" alt="MCP et IA Architecture">
+                        </div>
+                        <div class="carousel-text">
+                            <h3>MCP et Intelligence Artificielle : L'Évolution des Architectures Logicielles</h3>
+                            <p>L'intégration de l'Intelligence Artificielle dans les patterns MCP transforme l'architecture logicielle moderne. Découvrez comment cette fusion révolutionne le développement d'applications, de l'interface utilisateur adaptative à l'analyse prédictive, en passant par l'automatisation intelligente.</p>
+                        </div>
+                    </div>
+                </article>
 
+                <article class="carousel-slide" data-url="pagesVeille/veille1.html">
+                    <div class="carousel-content">
+                        <div class="carousel-image">
+                            <img src="https://movework.fr/wp-content/uploads/2024/10/midsection-business-people-working-office-1-scaled-e1729258359173-1024x709.jpg" alt="No-Code Development">
+                        </div>
+                        <div class="carousel-text">
+                            <h3>Le No-Code : Une Révolution dans le Développement d'Applications</h3>
+                            <p>Le no-code bouleverse le paysage technologique en permettant à des non-développeurs de créer des applications, des sites web ou des outils automatisés. Grâce à des interfaces visuelles intuitives, cette approche démocratise la technologie et accélère la transformation numérique.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="carousel-slide">
+                    <div class="carousel-content">
+                        <div class="carousel-image">
+                            <img src="https://images.ctfassets.net/lzny33ho1g45/5RVWTocIS5gifWznEG9adU/3f9ff27df830c7418c1a930da80e8120/best-no-code-app-builders.jpeg?w=1520&fm=avif&q=31&fit=thumb&h=760" alt="Best No-Code Platforms">
+                        </div>
+                        <div class="carousel-text">
+                            <h3>Les Meilleures Plateformes No-Code en 2025</h3>
+                            <p>Les plateformes no-code se multiplient, chacune ayant ses spécificités. Voici un tour d'horizon des outils les plus populaires en 2025 et leurs cas d'usage.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="carousel-slide">
+                    <div class="carousel-content">
+                        <div class="carousel-image">
+                            <img src="https://cdn.prod.website-files.com/65e7416cf8f1824784f010cf/65e7416cf8f1824784f019bc_642ed69f8d8b864ff9e23fd9_Nocode-Pros%252520and%252520Cons-p-800.webp" alt="No-Code Pros and Cons">
+                        </div>
+                        <div class="carousel-text">
+                            <h3>No-Code et Low-Code : Avantages et Limites</h3>
+                            <p>Le no-code et le low-code sont devenus des solutions prisées pour accélérer le développement d'applications. Cependant, il est essentiel de comprendre leurs avantages et leurs limites pour les utiliser à bon escient.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <button class="carousel-button prev" aria-label="Précédent">❮</button>
+            <button class="carousel-button next" aria-label="Suivant">❯</button>
+            
+            <div class="carousel-dots"></div>
+        </div>
     </div>
-    
 
     <div class="bar" id="prestransi"></div>
 
@@ -192,6 +211,176 @@
               });
           });
       });
+    </script>
+    <script>
+        class Carousel {
+            constructor(element) {
+                this.container = element;
+                this.track = element.querySelector('.carousel-track');
+                this.slides = Array.from(element.querySelectorAll('.carousel-slide'));
+                this.dots = element.querySelector('.carousel-dots');
+                this.currentIndex = 0;
+                this.slideCount = this.slides.length;
+                this.isTransitioning = false;
+                this.autoplayInterval = null;
+                this.touchStartX = 0;
+                this.touchEndX = 0;
+
+                this.init();
+            }
+
+            init() {
+                // Clone slides for infinite effect
+                this.slides.forEach(slide => {
+                    const clone = slide.cloneNode(true);
+                    this.track.appendChild(clone);
+                });
+
+                // Create dots
+                this.slides.forEach((_, index) => {
+                    const dot = document.createElement('button');
+                    dot.classList.add('carousel-dot');
+                    dot.setAttribute('aria-label', `Slide ${index + 1}`);
+                    dot.addEventListener('click', () => this.goToSlide(index));
+                    this.dots.appendChild(dot);
+                });
+
+                // Add event listeners
+                this.container.querySelector('.prev').addEventListener('click', () => this.prev());
+                this.container.querySelector('.next').addEventListener('click', () => this.next());
+                this.track.addEventListener('touchstart', e => this.touchStart(e));
+                this.track.addEventListener('touchmove', e => this.touchMove(e));
+                this.track.addEventListener('touchend', () => this.touchEnd());
+
+                // Click handlers for slides
+                this.track.addEventListener('click', e => {
+                    const slide = e.target.closest('.carousel-slide');
+                    if (slide && slide.dataset.url) {
+                        window.location.href = slide.dataset.url;
+                    }
+                });
+
+                // Mouse enter/leave handlers
+                this.container.addEventListener('mouseenter', () => this.pauseAutoplay());
+                this.container.addEventListener('mouseleave', () => this.startAutoplay());
+
+                // Initial setup
+                this.updateSlidePositions();
+                this.updateDots();
+                this.startAutoplay();
+            }
+
+            updateSlidePositions() {
+                const slideWidth = this.container.offsetWidth;
+                this.track.style.transform = `translateX(${-this.currentIndex * slideWidth}px)`;
+            }
+
+            updateDots() {
+                const dots = this.dots.children;
+                for (let i = 0; i < dots.length; i++) {
+                    dots[i].classList.toggle('active', i === this.currentIndex % this.slideCount);
+                }
+            }
+
+            goToSlide(index, animate = true) {
+                if (this.isTransitioning) return;
+                
+                this.isTransitioning = true;
+                this.currentIndex = index;
+
+                if (animate) {
+                    this.track.style.transition = 'transform 0.5s ease-in-out';
+                } else {
+                    this.track.style.transition = 'none';
+                }
+
+                this.updateSlidePositions();
+                this.updateDots();
+
+                // Handle infinite scroll
+                setTimeout(() => {
+                    if (this.currentIndex >= this.slideCount) {
+                        this.currentIndex = 0;
+                        this.track.style.transition = 'none';
+                        this.updateSlidePositions();
+                    }
+                    this.isTransitioning = false;
+                }, animate ? 500 : 0);
+            }
+
+            next() {
+                this.goToSlide(this.currentIndex + 1);
+            }
+
+            prev() {
+                if (this.currentIndex === 0) {
+                    this.currentIndex = this.slideCount;
+                    this.updateSlidePositions();
+                    setTimeout(() => this.goToSlide(this.slideCount - 1), 0);
+                } else {
+                    this.goToSlide(this.currentIndex - 1);
+                }
+            }
+
+            startAutoplay() {
+                if (this.autoplayInterval) return;
+                this.autoplayInterval = setInterval(() => this.next(), 5000);
+            }
+
+            pauseAutoplay() {
+                if (this.autoplayInterval) {
+                    clearInterval(this.autoplayInterval);
+                    this.autoplayInterval = null;
+                }
+            }
+
+            touchStart(e) {
+                this.touchStartX = e.touches[0].clientX;
+                this.pauseAutoplay();
+            }
+
+            touchMove(e) {
+                if (!this.touchStartX) return;
+                e.preventDefault();
+                const touch = e.touches[0];
+                const diff = this.touchStartX - touch.clientX;
+                const slideWidth = this.container.offsetWidth;
+                this.track.style.transform = `translateX(${-this.currentIndex * slideWidth - diff}px)`;
+            }
+
+            touchEnd() {
+                const diff = this.touchStartX - this.touchEndX;
+                if (Math.abs(diff) > 50) {
+                    if (diff > 0) {
+                        this.next();
+                    } else {
+                        this.prev();
+                    }
+                } else {
+                    this.goToSlide(this.currentIndex);
+                }
+                this.touchStartX = null;
+                this.touchEndX = null;
+                this.startAutoplay();
+            }
+
+            // Resize handler
+            handleResize() {
+                this.updateSlidePositions();
+            }
+        }
+
+        // Initialize carousel when DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            const carousel = new Carousel(document.querySelector('.carousel-container'));
+            
+            // Handle window resize
+            let resizeTimeout;
+            window.addEventListener('resize', () => {
+                clearTimeout(resizeTimeout);
+                resizeTimeout = setTimeout(() => carousel.handleResize(), 100);
+            });
+        });
     </script>
   </body>
 </html>

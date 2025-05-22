@@ -18,10 +18,87 @@
 }
 
 body {
-    opacity: 0; /* Opacité initiale à 0 */
-    transition: opacity 0.5s ease-in-out, background-color 0.5s ease-in-out; /* Transition pour le fondu */
-    background-color: #101010; /* Couleur de fond noire */
-    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #101010;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 120px; /* Ajout d'un padding-top pour compenser la navbar */
+}
+
+.header {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #1a1a1a;
+}
+
+.header h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 2.5em;
+}
+
+.content {
+    padding: 40px 0;
+}
+
+.section {
+    margin-bottom: 40px;
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.section h2 {
+    color: #638afd;
+    margin-top: 0;
+}
+
+.section p {
+    margin-bottom: 20px;
+}
+
+.section ul {
+    padding-left: 20px;
+}
+
+.section li {
+    margin-bottom: 10px;
+}
+
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #638afd;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    z-index: 999;
+}
+
+.back-button:hover {
+    background-color: #2548a9;
 }
 
 .rotate {
@@ -107,6 +184,15 @@ body {
 
   .nav-links a:hover {
     margin-right: 10px;
+  }
+
+  /* Ajustement du bouton retour pour les petits écrans */
+  .back-button {
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    text-align: center;
   }
 }
 
