@@ -6,26 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="theme-color" content="#101010" />
     <meta name="description" content="Veille technologique sur le no-code et l'IA dans le développement web" />
-    <link rel="stylesheet" href="styleveille.css">
+    <link rel="stylesheet" href="styleveille.css" />
     <title>Veille Technologique ° Lilo NOEL</title>
     <style>
-        body {
-            background-color: #101010; /* Couleur de fond initiale (noir) */
-            opacity: 0; /* Opacité initiale à 0 */
-            transition: opacity 0.5s ease-in-out, background-color 0.5s ease-in-out; /* Transition pour le fondu */
-        }
-        .fade-in {
-            background-color: #101010; /* Couleur de fond normale */
-            opacity: 1; /* Opacité finale */
-        }
-        .fade-out {
-            background-color: #101010; /* Couleur de fond noire */
-            opacity: 0; /* Opacité finale */
-        }
+      body {
+        background-color: #101010; /* Couleur de fond initiale (noir) */
+        opacity: 0; /* Opacité initiale à 0 */
+        transition: opacity 0.5s ease-in-out, background-color 0.5s ease-in-out; /* Transition pour le fondu */
+      }
+      .fade-in {
+        background-color: #101010; /* Couleur de fond normale */
+        opacity: 1; /* Opacité finale */
+      }
+      .fade-out {
+        background-color: #101010; /* Couleur de fond noire */
+        opacity: 0; /* Opacité finale */
+      }
     </style>
   </head>
   <body>
-    <nav class="navbar">
+    <nav class="navbar reveal">
       <a href="index.html" class="logo fade-link">Lilo NOEL</a>
       <div class="menu-icon" onclick="toggleMenu()">
         <img src="menu-icon.png" alt="Menu icon" />
@@ -39,108 +39,168 @@
       </div>
     </nav>
 
-    <header>
+    <header class="reveal">
       <div class="present1">
         <h1>Veille Technologique</h1>
-        <h2>Comment l'émergence des outils no-code et des technologies d'IA redéfinit elle le rôle des développeurs web, et quelles sont les implications pour leur avenir professionnel ?</h2>
+        <h2>
+          Comment l'émergence des outils no-code et des technologies d'IA
+          redéfinit elle le rôle des développeurs web, et quelles sont les
+          implications pour leur avenir professionnel ?
+        </h2>
       </div>
     </header>
 
-    <div class="bar" id="prestransi"></div>
+    <div class="bar reveal" id="prestransi"></div>
 
-    <div class="presentationVeille">
-
+    <div class="presentationVeille reveal">
       <h2>Qu'est ce qu'une veille technologique ?</h2>
       <p>
-        La veille technologique est un processus systématique qui consiste à recueillir, analyser et diffuser des informations sur les innovations, les tendances et les technologies émergentes dans un domaine précis.
-        <br>
-        <br>
-        Son objectif est de comprendre les changements qui se produisent dans l'environnement technologique et de prévoir leurs impacts sur une entreprise, une organisation ou un individu.
-        <br>
-        <br>
-        Elle permet de rester à jour sur les dernières technologies, de détecter les opportunités et de prévenir les menaces liées à l'évolution technologique.
+        La veille technologique est un processus systématique qui consiste à
+        recueillir, analyser et diffuser des informations sur les innovations,
+        les tendances et les technologies émergentes dans un domaine précis.
+        <br /><br />
+        Son objectif est de comprendre les changements qui se produisent dans
+        l'environnement technologique et de prévoir leurs impacts sur une
+        entreprise, une organisation ou un individu.
+        <br /><br />
+        Elle permet de rester à jour sur les dernières technologies, de 
+        détecter les opportunités et de prévenir les menaces liées à
+        l'évolution technologique.
       </p>
     </div>
 
-    <div class="bar" id="prestransi"></div>
+    <div class="bar reveal" id="prestransi"></div>
 
-    <div class="Veille_content" id="veille">
-        <h2>Veille technologique</h2>
-        
-        <div class="carousel-container">
-            <div class="carousel-track">
-                <!-- Les articles seront dupliqués par JavaScript -->
-                <article class="carousel-slide" data-url="pagesVeille/veille5.html">
-                    <div class="carousel-content">
-                        <div class="carousel-image">
-                            <img src="https://www.ionos.com/digitalguide/fileadmin/DigitalGuide/Teaser/programmierparadigmen-t.jpg" alt="Impact of No-Code and AI on Web Developers">
-                        </div>
-                        <div class="carousel-text">
-                            <h3>L'Impact des Outils No-Code et de l'IA sur les Développeurs Web</h3>
-                            <p>L'émergence des outils no-code et des technologies d'IA redéfinit le rôle des développeurs web. Découvrez comment ces technologies affectent leur rôle et leurs compétences nécessaires pour rester pertinents.</p>
-                        </div>
-                    </div>
-                </article>
+    <div class="Veille_content reveal" id="veille">
+      <h2>Veille technologique</h2>
 
-                <article class="carousel-slide" data-url="pagesVeille/veille2.html">
-                    <div class="carousel-content">
-                        <div class="carousel-image">
-                            <img src="https://raygun.com/blog/images/announcing-mcp/mcp-feature-image.webp" alt="MCP et IA Architecture">
-                        </div>
-                        <div class="carousel-text">
-                            <h3>MCP et Intelligence Artificielle</h3>
-                            <p>L'intégration de l'Intelligence Artificielle dans les patterns MCP change la manière de concevoir des applications. Découvrez comment de simples utilisateurs peuvent créer des applications avec l'IA, en écrivant en langage naturel.</p>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="carousel-slide" data-url="pagesVeille/veille1.html">
-                    <div class="carousel-content">
-                        <div class="carousel-image">
-                            <img src="https://movework.fr/wp-content/uploads/2024/10/midsection-business-people-working-office-1-scaled-e1729258359173-1024x709.jpg" alt="No-Code Development">
-                        </div>
-                        <div class="carousel-text">
-                            <h3>Le No-Code : Une Révolution dans le Développement d'Applications</h3>
-                            <p>Le no-code bouleverse le paysage technologique en permettant à des non-développeurs de créer des applications, des sites web ou des outils automatisés. Grâce à des interfaces visuelles intuitives, cette approche démocratise la technologie et accélère la transformation numérique.</p>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="carousel-slide" data-url="pagesVeille/veille3.html">
-                    <div class="carousel-content">
-                        <div class="carousel-image">
-                            <img src="https://images.ctfassets.net/lzny33ho1g45/5RVWTocIS5gifWznEG9adU/3f9ff27df830c7418c1a930da80e8120/best-no-code-app-builders.jpeg?w=1520&fm=avif&q=31&fit=thumb&h=760" alt="Best No-Code Platforms">
-                        </div>
-                        <div class="carousel-text">
-                            <h3>Les Meilleures Plateformes No-Code en 2025</h3>
-                            <p>Découvrez les plateformes no-code les plus performantes de 2025. De Webflow à Bubble en passant par Adalo, explorez les outils qui révolutionnent le développement d'applications avec leurs fonctionnalités avancées et leur facilité d'utilisation.</p>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="carousel-slide" data-url="pagesVeille/veille4.html">
-                    <div class="carousel-content">
-                        <div class="carousel-image">
-                            <img src="https://cdn.prod.website-files.com/65e7416cf8f1824784f010cf/65e7416cf8f1824784f019bc_642ed69f8d8b864ff9e23fd9_Nocode-Pros%252520and%252520Cons-p-800.webp" alt="No-Code Pros and Cons">
-                        </div>
-                        <div class="carousel-text">
-                            <h3>No-Code et Low-Code : Avantages et Limites</h3>
-                            <p>Une analyse approfondie des avantages et des limitations du développement no-code et low-code. Découvrez comment ces approches transforment le développement d'applications tout en comprenant leurs contraintes pour faire des choix éclairés.</p>
-                        </div>
-                    </div>
-                </article>
-
-                
+      <div class="carousel-container reveal">
+        <div class="carousel-track">
+          <article
+            class="carousel-slide reveal"
+            data-url="pagesVeille/veille5.html"
+          >
+            <div class="carousel-content">
+              <div class="carousel-image">
+                <img
+                  src="https://www.ionos.com/digitalguide/fileadmin/DigitalGuide/Teaser/programmierparadigmen-t.jpg"
+                  alt="Impact of No-Code and AI on Web Developers"
+                />
+              </div>
+              <div class="carousel-text">
+                <h3>L'Impact des Outils No-Code et de l'IA sur les Développeurs Web</h3>
+                <p>
+                  L'émergence des outils no-code et des technologies d'IA
+                  redéfinit le rôle des développeurs web. Découvrez comment ces
+                  technologies affectent leur rôle et leurs compétences
+                  nécessaires pour rester pertinents.
+                </p>
+              </div>
             </div>
+          </article>
 
-            <button class="carousel-button prev" aria-label="Précédent">❮</button>
-            <button class="carousel-button next" aria-label="Suivant">❯</button>
-            
-            <div class="carousel-dots"></div>
+          <article
+            class="carousel-slide reveal"
+            data-url="pagesVeille/veille2.html"
+          >
+            <div class="carousel-content">
+              <div class="carousel-image">
+                <img
+                  src="https://raygun.com/blog/images/announcing-mcp/mcp-feature-image.webp"
+                  alt="MCP et IA Architecture"
+                />
+              </div>
+              <div class="carousel-text">
+                <h3>MCP et Intelligence Artificielle</h3>
+                <p>
+                  L'intégration de l'Intelligence Artificielle dans les patterns
+                  MCP change la manière de concevoir des applications. Découvrez
+                  comment de simples utilisateurs peuvent créer des applications
+                  avec l'IA, en écrivant en langage naturel.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="carousel-slide reveal"
+            data-url="pagesVeille/veille1.html"
+          >
+            <div class="carousel-content">
+              <div class="carousel-image">
+                <img
+                  src="https://movework.fr/wp-content/uploads/2024/10/midsection-business-people-working-office-1-scaled-e1729258359173-1024x709.jpg"
+                  alt="No-Code Development"
+                />
+              </div>
+              <div class="carousel-text">
+                <h3>Le No-Code : Une Révolution dans le Développement d'Applications</h3>
+                <p>
+                  Le no-code bouleverse le paysage technologique en permettant à
+                  des non-développeurs de créer des applications, des sites web
+                  ou des outils automatisés. Grâce à des interfaces visuelles
+                  intuitives, cette approche démocratise la technologie et
+                  accélère la transformation numérique.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="carousel-slide reveal"
+            data-url="pagesVeille/veille3.html"
+          >
+            <div class="carousel-content">
+              <div class="carousel-image">
+                <img
+                  src="https://images.ctfassets.net/lzny33ho1g45/5RVWTocIS5gifWznEG9adU/3f9ff27df830c7418c1a930da80e8120/best-no-code-app-builders.jpeg?w=1520&fm=avif&q=31&fit=thumb&h=760"
+                  alt="Best No-Code Platforms"
+                />
+              </div>
+              <div class="carousel-text">
+                <h3>Les Meilleures Plateformes No-Code en 2025</h3>
+                <p>
+                  Découvrez les plateformes no-code les plus performantes de
+                  2025. De Webflow à Bubble en passant par Adalo, explorez les
+                  outils qui révolutionnent le développement d'applications avec
+                  leurs fonctionnalités avancées et leur facilité d'utilisation.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="carousel-slide reveal"
+            data-url="pagesVeille/veille4.html"
+          >
+            <div class="carousel-content">
+              <div class="carousel-image">
+                <img
+                  src="https://cdn.prod.website-files.com/65e7416cf8f1824784f010cf/65e7416cf8f1824784f019bc_642ed69f8d8b864ff9e23fd9_Nocode-Pros%252520and%252520Cons-p-800.webp"
+                  alt="No-Code Pros and Cons"
+                />
+              </div>
+              <div class="carousel-text">
+                <h3>No-Code et Low-Code : Avantages et Limites</h3>
+                <p>
+                  Une analyse approfondie des avantages et des limitations du
+                  développement no-code et low-code. Découvrez comment ces
+                  approches transforment le développement d'applications tout en
+                  comprenant leurs contraintes pour faire des choix éclairés.
+                </p>
+              </div>
+            </div>
+          </article>
         </div>
+
+        <button class="carousel-button prev" aria-label="Précédent">❮</button>
+        <button class="carousel-button next" aria-label="Suivant">❯</button>
+
+        <div class="carousel-dots"></div>
+      </div>
     </div>
 
-    <footer class="modern-footer" id="contact">
+    <footer class="modern-footer reveal" id="contact">
       <div class="footer-content">
         <div class="footer-section">
           <h3>À propos</h3>
@@ -158,16 +218,19 @@
           <h3>Me suivre</h3>
           <div class="social-links">
             <a href="https://github.com/Aypixels" class="social-link">
-              <img src="github.webp" alt="GitHub">
+              <img src="github.webp" alt="GitHub" />
             </a>
             <a href="https://www.instagram.com/noel_lilo/" class="social-link">
-              <img src="instagram.webp" alt="Instagram">
+              <img src="instagram.webp" alt="Instagram" />
             </a>
-            <a href="https://www.facebook.com/profile.php?id=100092222206546" class="social-link">
-              <img src="facebook.png" alt="Facebook">
+            <a
+              href="https://www.facebook.com/profile.php?id=100092222206546"
+              class="social-link"
+            >
+              <img src="facebook.png" alt="Facebook" />
             </a>
             <a href="#" class="social-link">
-              <img src="linkedin.webp" alt="LinkedIn">
+              <img src="linkedin.webp" alt="LinkedIn" />
             </a>
           </div>
         </div>
@@ -180,220 +243,162 @@
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="particles.js"></script>
     <script>
-        function toggleMenu() {
-            let rotated = false
+      function toggleMenu() {
+        let rotated = false;
 
-            const navLinks = document.querySelector('.nav-links');
-            navLinks.classList.toggle('open');
+        const navLinks = document.querySelector(".nav-links");
+        navLinks.classList.toggle("open");
 
-            const menuIcon = document.querySelector('.menu-icon img');
-                        
-            if(rotated == false) {
-                rotated = true
-                menuIcon.classList.add('rotate');
+        const menuIcon = document.querySelector(".menu-icon img");
 
-                setTimeout(() => {
-                    menuIcon.classList.remove('rotate');
-                }, 500);
-            } else {
-                rotated = false
-                menuIcon.classList.add("rotateL")
+        if (rotated == false) {
+          rotated = true;
+          menuIcon.classList.add("rotate");
 
-                setTimeout(() => {
-                    menuIcon.classList.remove("rotateL")
-                })
-            }
+          setTimeout(() => {
+            menuIcon.classList.remove("rotate");
+          }, 500);
+        } else {
+          rotated = false;
+          menuIcon.classList.add("rotateL");
+
+          setTimeout(() => {
+            menuIcon.classList.remove("rotateL");
+          });
         }
+      }
     </script>
     <script>
-      document.addEventListener("DOMContentLoaded", function() {
-          // Effet de fondu à l'arrivée sur la page
-          setTimeout(() => {
-              document.body.classList.add('fade-in');
-          }, 200); // Délai pour s'assurer que le CSS est appliqué
+      document.addEventListener("DOMContentLoaded", function () {
+        // Effet de fondu à l'arrivée sur la page
+        setTimeout(() => {
+          document.body.classList.add("fade-in");
+        }, 200); // Délai pour s'assurer que le CSS est appliqué
 
-          const links = document.querySelectorAll('.fade-link');
-          links.forEach(link => {
-              link.addEventListener('click', function(event) {
-                  event.preventDefault();
-                  const href = this.getAttribute('href');
-                  document.body.classList.add('fade-out');
-                  setTimeout(() => {
-                      window.location.href = href;
-                  }, 500); // Durée de la transition
-              });
+        const links = document.querySelectorAll(".fade-link");
+        links.forEach((link) => {
+          link.addEventListener("click", function (event) {
+            event.preventDefault();
+            const href = this.getAttribute("href");
+            document.body.classList.add("fade-out");
+            setTimeout(() => {
+              window.location.href = href;
+            }, 500); // Durée de la transition
           });
+        });
       });
     </script>
     <script>
-        class Carousel {
-            constructor(element) {
-                this.container = element;
-                this.track = element.querySelector('.carousel-track');
-                this.slides = Array.from(element.querySelectorAll('.carousel-slide'));
-                this.dots = element.querySelector('.carousel-dots');
-                this.currentIndex = 0;
-                this.slideCount = this.slides.length;
-                this.isTransitioning = false;
-                this.autoplayInterval = null;
-                this.touchStartX = 0;
-                this.touchEndX = 0;
+      class Carousel {
+        constructor(element) {
+          this.container = element;
+          this.track = element.querySelector(".carousel-track");
+          this.slides = Array.from(element.querySelectorAll(".carousel-slide"));
+          this.dots = element.querySelector(".carousel-dots");
+          this.currentIndex = 0;
+          this.slideCount = this.slides.length;
+          this.isTransitioning = false;
+          this.autoplayInterval = null;
+          this.prevButton = element.querySelector(".carousel-button.prev");
+          this.nextButton = element.querySelector(".carousel-button.next");
 
-                this.init();
-            }
-
-            init() {
-                // Clone slides for infinite effect
-                this.slides.forEach(slide => {
-                    const clone = slide.cloneNode(true);
-                    this.track.appendChild(clone);
-                });
-
-                // Create dots
-                this.slides.forEach((_, index) => {
-                    const dot = document.createElement('button');
-                    dot.classList.add('carousel-dot');
-                    dot.setAttribute('aria-label', `Slide ${index + 1}`);
-                    dot.addEventListener('click', () => this.goToSlide(index));
-                    this.dots.appendChild(dot);
-                });
-
-                // Add event listeners
-                this.container.querySelector('.prev').addEventListener('click', () => this.prev());
-                this.container.querySelector('.next').addEventListener('click', () => this.next());
-                this.track.addEventListener('touchstart', e => this.touchStart(e));
-                this.track.addEventListener('touchmove', e => this.touchMove(e));
-                this.track.addEventListener('touchend', () => this.touchEnd());
-
-                // Click handlers for slides
-                this.track.addEventListener('click', e => {
-                    const slide = e.target.closest('.carousel-slide');
-                    if (slide && slide.dataset.url) {
-                        window.location.href = slide.dataset.url;
-                    }
-                });
-
-                // Mouse enter/leave handlers
-                this.container.addEventListener('mouseenter', () => this.pauseAutoplay());
-                this.container.addEventListener('mouseleave', () => this.startAutoplay());
-
-                // Initial setup
-                this.updateSlidePositions();
-                this.updateDots();
-                this.startAutoplay();
-            }
-
-            updateSlidePositions() {
-                const slideWidth = this.container.offsetWidth;
-                this.track.style.transform = `translateX(${-this.currentIndex * slideWidth}px)`;
-            }
-
-            updateDots() {
-                const dots = this.dots.children;
-                for (let i = 0; i < dots.length; i++) {
-                    dots[i].classList.toggle('active', i === this.currentIndex % this.slideCount);
-                }
-            }
-
-            goToSlide(index, animate = true) {
-                if (this.isTransitioning) return;
-                
-                this.isTransitioning = true;
-                this.currentIndex = index;
-
-                if (animate) {
-                    this.track.style.transition = 'transform 0.5s ease-in-out';
-                } else {
-                    this.track.style.transition = 'none';
-                }
-
-                this.updateSlidePositions();
-                this.updateDots();
-
-                // Handle infinite scroll
-                setTimeout(() => {
-                    if (this.currentIndex >= this.slideCount) {
-                        this.currentIndex = 0;
-                        this.track.style.transition = 'none';
-                        this.updateSlidePositions();
-                    }
-                    this.isTransitioning = false;
-                }, animate ? 500 : 0);
-            }
-
-            next() {
-                this.goToSlide(this.currentIndex + 1);
-            }
-
-            prev() {
-                if (this.currentIndex === 0) {
-                    this.currentIndex = this.slideCount;
-                    this.updateSlidePositions();
-                    setTimeout(() => this.goToSlide(this.slideCount - 1), 0);
-                } else {
-                    this.goToSlide(this.currentIndex - 1);
-                }
-            }
-
-            startAutoplay() {
-                if (this.autoplayInterval) return;
-                this.autoplayInterval = setInterval(() => this.next(), 5000);
-            }
-
-            pauseAutoplay() {
-                if (this.autoplayInterval) {
-                    clearInterval(this.autoplayInterval);
-                    this.autoplayInterval = null;
-                }
-            }
-
-            touchStart(e) {
-                this.touchStartX = e.touches[0].clientX;
-                this.pauseAutoplay();
-            }
-
-            touchMove(e) {
-                if (!this.touchStartX) return;
-                e.preventDefault();
-                const touch = e.touches[0];
-                const diff = this.touchStartX - touch.clientX;
-                const slideWidth = this.container.offsetWidth;
-                this.track.style.transform = `translateX(${-this.currentIndex * slideWidth - diff}px)`;
-            }
-
-            touchEnd() {
-                const diff = this.touchStartX - this.touchEndX;
-                if (Math.abs(diff) > 50) {
-                    if (diff > 0) {
-                        this.next();
-                    } else {
-                        this.prev();
-                    }
-                } else {
-                    this.goToSlide(this.currentIndex);
-                }
-                this.touchStartX = null;
-                this.touchEndX = null;
-                this.startAutoplay();
-            }
-
-            // Resize handler
-            handleResize() {
-                this.updateSlidePositions();
-            }
+          this.init();
         }
 
-        // Initialize carousel when DOM is loaded
-        document.addEventListener('DOMContentLoaded', () => {
-            const carousel = new Carousel(document.querySelector('.carousel-container'));
-            
-            // Handle window resize
-            let resizeTimeout;
-            window.addEventListener('resize', () => {
-                clearTimeout(resizeTimeout);
-                resizeTimeout = setTimeout(() => carousel.handleResize(), 100);
-            });
-        });
+        init() {
+          this.createDots();
+          this.update();
+          this.prevButton.addEventListener("click", () => this.prev());
+          this.nextButton.addEventListener("click", () => this.next());
+
+          this.dots.addEventListener("click", (e) => {
+            if (e.target.matches("button")) {
+              const index = parseInt(e.target.getAttribute("data-index"));
+              this.goToSlide(index);
+            }
+          });
+
+          this.startAutoplay();
+          this.track.addEventListener("click", (e) => {
+            const article = e.target.closest(".carousel-slide");
+            if (article) {
+              const url = article.getAttribute("data-url");
+              if (url) {
+                window.open(url, "_blank");
+              }
+            }
+          });
+        }
+
+        createDots() {
+          this.dots.innerHTML = "";
+          this.slides.forEach((_, index) => {
+            const dot = document.createElement("button");
+            dot.setAttribute("data-index", index);
+            dot.classList.add("carousel-dot");
+            this.dots.appendChild(dot);
+          });
+          this.updateDots();
+        }
+
+        updateDots() {
+          const dots = Array.from(this.dots.children);
+          dots.forEach((dot) => dot.classList.remove("active"));
+          if (dots[this.currentIndex]) {
+            dots[this.currentIndex].classList.add("active");
+          }
+        }
+
+        update() {
+          const slideWidth = this.slides[0].offsetWidth;
+          this.track.style.transform = `translateX(-${this.currentIndex * slideWidth}px)`;
+          this.updateDots();
+        }
+
+        prev() {
+          if (this.isTransitioning) return;
+          this.currentIndex = (this.currentIndex - 1 + this.slideCount) % this.slideCount;
+          this.update();
+        }
+
+        next() {
+          if (this.isTransitioning) return;
+          this.currentIndex = (this.currentIndex + 1) % this.slideCount;
+          this.update();
+        }
+
+        goToSlide(index) {
+          if (index < 0 || index >= this.slideCount) return;
+          this.currentIndex = index;
+          this.update();
+        }
+
+        startAutoplay() {
+          this.autoplayInterval = setInterval(() => this.next(), 5000);
+        }
+
+        stopAutoplay() {
+          clearInterval(this.autoplayInterval);
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const carousel = new Carousel(document.querySelector(".carousel-container"));
+      });
+    </script>
+
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal().reveal(".reveal", {
+        delay: 100,
+        duration: 800,
+        distance: "40px",
+        origin: "bottom",
+        easing: "ease-out",
+        interval: 200,
+        reset: false,
+      });
     </script>
   </body>
 </html>

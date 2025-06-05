@@ -256,44 +256,49 @@ header {  background-color: rgba(16, 16, 16, 0.3);  height: 100vh;  color: #fff;
 }
 
 .projet a {
-  color: white;
-  font-size: 1.2rem;
-  margin: 5px 10px;
-}
-.projet a {
-  line-height: 1;
   position: relative;
-  z-index: 0;
   display: inline-block;
-  padding: 5px 5px;
-  overflow: hidden;
+  padding: 8px 15px;
+  margin: 10px 15px 10px 0;
+  font-size: 1.2rem;
   color: #fff;
-  vertical-align: bottom;
-  transition: color 0.3s ease-out;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  background: transparent;
+  overflow: hidden;
+  transition: color 0.4s ease, box-shadow 0.4s ease, transform 0.3s ease;
+  box-shadow: 0 0 5px rgba(99, 138, 253, 0.2);
+  cursor: pointer;
+  letter-spacing: 0.03em;
 }
 
 .projet a::before {
   content: "";
   position: absolute;
-  z-index: -1;
   top: 0;
-  left: 0;
-  transform: translateY(calc(100% - 2px));
+  left: -100%;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(60deg, #2548a9 0%, #f6f9fc 100%);
-  transition: transform 0.25s ease-out;
+  background: linear-gradient(90deg, #2548a9 0%, #638afd 50%, #2548a9 100%);
+  transition: transform 0.35s ease;
+  transform: skewX(-20deg) translateX(0);
+  z-index: -1;
+  border-radius: 8px;
 }
 
 .projet a:hover {
-  color: black;
-  font-weight: 800;
+  color: #101010;
+  font-weight: 700;
+  box-shadow: 0 8px 20px rgba(99, 138, 253, 0.6);
+  transform: translateY(-6px);
 }
 
 .projet a:hover::before {
-  transform: translateY(0);
-  transition: transform 0.25s ease-out;
+  transform: skewX(-20deg) translateX(100%);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .contact {
   background-color: rgba(16, 16, 16, 0.5);

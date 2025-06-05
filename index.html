@@ -111,11 +111,11 @@
             Mon tout premier projet de code ! Il m'a permis de me familiariser
             avec tout ce qui était développement web etc...
           </p>
-          <a href="https://github.com/Aypixels/morpionstest">Le repos Github</a>
+          <a href="https://github.com/Aypixels/morpionstest" class="reveal">Le repos Github</a>
           <br />
-          <a href="https://glitch.com/edit/#!/jeu-de-tictactoe">Le code source Glitch.com</a>
+          <a href="https://glitch.com/edit/#!/jeu-de-tictactoe" class="reveal">Le code source Glitch.com</a>
           <br />
-          <a href="https://jeu-de-tictactoe.glitch.me">Le site du jeu !</a>
+          <a href="https://jeu-de-tictactoe.glitch.me" class="reveal">Le site du jeu !</a>
         </li>
         <li>
           <h3>Site NSI</h3>
@@ -126,11 +126,11 @@
             Ce projet m'a permis d'en apprendre plus sur l'utilisation plus
             approfondi sur le css et le html.
           </p>
-          <a href="https://glitch.com/edit/#!/n-s-i"
+          <a href="https://glitch.com/edit/#!/n-s-i" class="reveal"
             >Le code source Glitch.com</a
           >
           <br />
-          <a href="https://n-s-i.glitch.me">Le site du projet !</a>
+          <a href="https://n-s-i.glitch.me" class="reveal">Le site du projet !</a>
         </li>
         <li>
           <h3>Mon Protfolio !</h3>
@@ -140,11 +140,11 @@
             entrepris et ça m'a vraiment fait du bien, m'a rappelé de bons
             souvenirs et m'a permis de continuer a revoir le css et le html !
           </p>
-          <a href="https://glitch.com/edit/#!/blog-de-lilo"
+          <a href="https://glitch.com/edit/#!/blog-de-lilo" class="reveal"
             >Le code source Glitch.com</a
           >
           <br />
-          <a href="https://blog-de-lilo.glitch.me">Le site du projet !</a>
+          <a href="https://blog-de-lilo.glitch.me" class="reveal">Le site du projet !</a>
         </li>
       </ul>
       <h2>Les projets au BTS SIO</h2>
@@ -163,7 +163,7 @@
             et de les approfondir. Nous avons dû réaliser un programme en python
             qui permettait de gérer une base de données. et d'en automatiser les tâches.
           </p>
-          <a href="https://drive.google.com/drive/folders/1OaCqCRy6SjHdTuRUVJqk3oJZ-D4-LNAH?usp=sharing">
+          <a href="https://drive.google.com/drive/folders/1OaCqCRy6SjHdTuRUVJqk3oJZ-D4-LNAH?usp=sharing" class="reveal">
             Lien du Google Drive 
           </a>
         </li>
@@ -174,7 +174,7 @@
             réaliser un projet en équipe. Nous avons dû réaliser un programme
             qui permettait de gérer une base de données, et d'y intégrer une base de donnée à l'aide des outils de swing et Netbeans.
           </p>
-          <a href="https://drive.google.com/drive/folders/1aAYJw9VKe8vi3lftO81DEeI_XC5Ay8WG?usp=sharing">
+          <a href="https://drive.google.com/drive/folders/1aAYJw9VKe8vi3lftO81DEeI_XC5Ay8WG?usp=sharing" class="reveal">
             Lien du Google Drive
           </a>
         </li>
@@ -226,9 +226,57 @@
       </div>
     </footer>
 
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="particles.js"></script>
     <script>
+      ScrollReveal().reveal('.reveal', {
+        delay: 100,
+        duration: 800,
+        distance: '40px',
+        origin: 'bottom',
+        easing: 'ease-out',
+        interval: 200, // <<< C’est cette ligne qui les révèle un à un
+        reset: false   // Met à true si tu veux que ça se rejoue à chaque scroll
+      });
+    </script>
+    
+    <script>
+      ScrollReveal().reveal('.presentation', {
+        delay: 200,
+        duration: 1000,
+        origin: 'bottom',
+        distance: '50px',
+        easing: 'ease-in-out',
+        reset: false
+      });
+    
+      ScrollReveal().reveal('.projet', {
+        delay: 300,
+        duration: 1000,
+        origin: 'left',
+        distance: '60px',
+        easing: 'ease-in-out'
+      });
+    
+      ScrollReveal().reveal('footer', {
+        delay: 400,
+        duration: 500,
+        origin: 'bottom',
+        distance: '40px',
+        easing: 'ease-in-out'
+      });
+    
+      ScrollReveal().reveal('.present h1, .present h2, .present h3, .present h4, .present h5', {
+        interval: 100,
+        origin: 'top',
+        distance: '20px',
+        duration: 800,
+        reset: false
+      });
+    </script>
+    
+    <script>     
         function toggleMenu() {
             let rotated = false
 
