@@ -1,326 +1,363 @@
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Portfolio ° Lilo NOEL</title>
-    <style>
-        body {
-            background-color: #101010; /* Couleur de fond initiale (noir) */
-            opacity: 0; /* Opacité initiale à 0 */
-            transition: opacity 0.5s ease-in-out, background-color 0.5s ease-in-out; /* Transition pour le fondu */
-        }
-        .fade-in {
-            background-color: #f6f9fc; /* Couleur de fond normale */
-            opacity: 1; /* Opacité finale */
-        }
-        .fade-out {
-            background-color: #101010; /* Couleur de fond noire */
-            opacity: 0; /* Opacité finale */
-        }
-    </style>
-  </head>
-  <body>
-    <nav class="navbar">
-      <a href="index.html" class="logo fade-link">Lilo NOEL</a>
-      <div class="menu-icon" onclick="toggleMenu()">
-        <img src="menu-icon.png" alt="Menu icon" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Portfolio ° Lilo NOEL</title>
+  <style>
+    body {
+      background-color: #101010;
+      /* Couleur de fond initiale (noir) */
+      opacity: 0;
+      /* Opacité initiale à 0 */
+      transition: opacity 0.5s ease-in-out, background-color 0.5s ease-in-out;
+      /* Transition pour le fondu */
+    }
+
+    .fade-in {
+      background-color: #f6f9fc;
+      /* Couleur de fond normale */
+      opacity: 1;
+      /* Opacité finale */
+    }
+
+    .fade-out {
+      background-color: #101010;
+      /* Couleur de fond noire */
+      opacity: 0;
+      /* Opacité finale */
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="logo fade-link">Lilo NOEL</a>
+    <div class="menu-icon" onclick="toggleMenu()">
+      <img src="menu-icon.png" alt="Menu icon" />
+    </div>
+    <div class="nav-links">
+      <ul>
+        <li><a href="veille.html" class="fade-link">Veille Technologique</a></li>
+        <li><a href="#p">Présentation</a></li>
+        <li><a href="#tp">Projet</a></li>
+        <li><a href="#contact">Me contacter</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header>
+    <div class="present">
+      <h4>Bonjour, je m'appelle</h4>
+      <h1>Lilo Noël</h1>
+      <h2>Je suis étudiant en 1<sup>ère</sup> année de BTS SIO</h2>
+      <h3>à La Joliverie</h3>
+      <h5>
+        J'ai dans l'idée de perfectionner mes compétences dans le domaine de l'informatique
+        pour me permettre de me rendre le plus utile possible
+      </h5>
+    </div>
+    <div id="particles-js"></div>
+  </header>
+
+  <div class="bar" id="prestransi"></div>
+
+  <div class="presentation" id="p">
+    <h2>Qui suis-je ?</h2>
+    <p>
+      Je suis un passionné d'informatique, ayant acquis une solide expérience en autodidacte
+      dans des domaines variés tels que le JavaScript, le Python, le HTML et le CSS. Cette
+      soif d'apprendre m'a naturellement conduit à poursuivre mes études en BTS Services
+      Informatiques aux Organisations (SIO), où j'ai approfondi mes connaissances sur le
+      développement d'applications sécurisées et la gestion des données de manière professionnelle.
+      <br>
+      <br>
+      Ce parcours m'a permis de développer des compétences techniques robustes et d'acquérir une
+      vision complète des enjeux liés à la sécurité et à l'optimisation des systèmes informatiques.
+      Je suis convaincu que l'informatique est le domaine dans lequel je m'épanouis le plus et où
+      je peux apporter ma contribution la plus significative, en alliant créativité, rigueur et
+      expertise technique.
+      <br>
+      <br>
+      Aujourd'hui, j'ai acquis de solides compétences en python, javascript, html, css, mais également en
+      langages orientés objets tels que le C, le C++ ainsi que le C# dû à mes apprentissages personnels et
+      l'approfondissement
+      grâce à mes études et les différents projets
+    </p>
+    <div class="CV">
+      <div>
+        <div>
+          <a href="CV_Lilo_NOEL.pdf" style="color: white;">CV French Version</a>
+        </div>
+        <div>
+          <div id="download" style="text-align: center;"><a href="CV_Lilo_NOEL.pdf"
+              style="color: white;">Télécharger</a></div>
+        </div>
       </div>
-      <div class="nav-links">
+      <div>
+        <div>
+          <a href="CV_Lilo_NOEL_English_version.pdf" style="color: white;">CV English Version</a>
+        </div>
+        <div>
+          <div id="download" style="text-align: center;"><a href="CV_Lilo_NOEL_English_version.pdf"
+              style="color: white;">Download</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bar" id="projtransi"></div>
+
+  <div class="projet" id="tp">
+    <h2>Mes projets</h2>
+    <p>
+      La plupart des projets que j'ai entrepris n'ont pas spécialement abouti.
+      Mais ce n'est pas pour cela qu'ils ne m'ont pas apporté beaucoup ! Ils
+      m'ont permis d'en apprendre plus sur certains langages et à comment
+      réfléchir comme un développeur.
+    </p>
+    <ul>
+      <li>
+        <h3>Tic Tac Toe</h3>
+        <p>
+          Mon tout premier projet de code ! Il m'a permis de me familiariser
+          avec tout ce qui était développement web etc...
+        </p>
+        <a href="https://github.com/Aypixels/morpionstest" class="reveal">Le repos Github</a>
+        <br />
+        <a href="https://glitch.com/edit/#!/jeu-de-tictactoe" class="reveal">Le code source Glitch.com</a>
+        <br />
+        <a href="https://jeu-de-tictactoe.glitch.me" class="reveal">Le site du jeu !</a>
+      </li>
+      <li>
+        <h3>Site NSI</h3>
+        <p>
+          C'était un projet pour la NSI. On avait la possibilité de réaliser
+          un site web sur le sujet de notre choix. Je me suis donc dit qu'il
+          serait intéressant de réaliser un site pour faire découvrir la nsi.
+          Ce projet m'a permis d'en apprendre plus sur l'utilisation plus
+          approfondi sur le css et le html.
+        </p>
+        <a href="https://glitch.com/edit/#!/n-s-i" class="reveal">Le code source Glitch.com</a>
+        <br />
+        <a href="https://n-s-i.glitch.me" class="reveal">Le site du projet !</a>
+      </li>
+      <li>
+        <h3>Mon Protfolio !</h3>
+        <p>
+          La création de mon portfolio était une expérience vraiment enrichissante
+          ! Elle m'a permis de revoir un peu tous les projets que j'ai
+          entrepris et ça m'a vraiment fait du bien, m'a rappelé de bons
+          souvenirs et m'a permis de continuer a revoir le css et le html !
+        </p>
+        <a href="https://glitch.com/edit/#!/blog-de-lilo" class="reveal">Le code source Glitch.com</a>
+        <br />
+        <a href="https://blog-de-lilo.glitch.me" class="reveal">Le site du projet !</a>
+      </li>
+    </ul>
+    <h2>Les projets au BTS SIO</h2>
+    <p>
+      Les projets que j'ai réalisé en BTS SIO m'ont permis de me perfectionner
+      dans le domaine de l'informatique. J'ai pu apprendre à travailler en
+      équipe, à gérer des projets de A à Z, à m'organiser et à apprendre de
+      nouvelles choses.
+    </p>
+    <h2>1<sup>ère</sup> année</h2>
+    <ul>
+      <li>
+        <h3>Projet Python</h3>
+        <p>
+          Ce projet nous a permis d'appliquer les notions vues en cours,
+          et de les approfondir. Nous avons dû réaliser un programme en python
+          qui permettait de gérer une base de données. et d'en automatiser les tâches.
+        </p>
+        <a href="https://drive.google.com/drive/folders/1OaCqCRy6SjHdTuRUVJqk3oJZ-D4-LNAH?usp=sharing" class="reveal">
+          Lien du Google Drive
+        </a>
+      </li>
+      <li>
+        <h3>Projet Java</h3>
+        <p>
+          Ce projet nous a permis de découvrir le langage Java, et de
+          réaliser un projet en équipe. Nous avons dû réaliser un programme
+          qui permettait de gérer une base de données, et d'y intégrer une base de donnée à l'aide des outils de swing
+          et Netbeans.
+        </p>
+        <a href="https://drive.google.com/drive/folders/1aAYJw9VKe8vi3lftO81DEeI_XC5Ay8WG?usp=sharing" class="reveal">
+          Lien du Google Drive
+        </a>
+      </li>
+    </ul>
+    <h2>2<sup>ème</sup> année</h2>
+    <p>
+      Les projets de 2<sup>ème</sup> année ne sont pas encore réalisés, je ne peux donc pas encore les présenter.
+    </p>
+  </div>
+
+  <div class="bar" id="prestransi"></div>
+
+  <div class="stage">
+    <h2>Mes Stages</h2>
+    <h3>Experimentation sur l'automatisation de processus comptables</h3>
+    <p>
+      Dans le cadre de ma première année de BTS SIO (option SLAM) à La Joliverie, j’ai eu l’opportunité d’effectuer un
+      stage de six semaines au sein de la Direction des Solutions Numériques (DSN) du Département de Loire-Atlantique, à
+      Nantes. Ma mission principale : expérimenter l’automatisation de processus comptables avec des outils de Robotic
+      Process Automation (RPA), en lien avec le logiciel financier Grand Angle.
+
+      J’ai testé et comparé quatre solutions : Robot Framework, Cypress, UiPath, et Playwright. Après plusieurs semaines
+      d’expérimentations, mon choix s’est porté sur Playwright, un outil moderne développé par Microsoft. Il s’est
+      révélé particulièrement adapté pour automatiser des scénarios complexes dans un environnement web, tout en offrant
+      une excellente stabilité, une documentation riche, et une intégration fluide avec les outils de développement que
+      j’utilisais (comme VS Code).
+
+      Bien que plus technique que UiPath, Playwright a convaincu par sa performance, sa flexibilité et son coût nul, des
+      critères essentiels pour un usage en collectivité.
+
+      Au-delà des tests techniques, j’ai aussi mené une veille technologique sur l’usage de l’IA dans la RPA, participé
+      à des réunions de projet, rédigé des rapports de synthèse, et même échangé avec des collectivités partenaires. Ce
+      stage m’a permis de monter en compétences sur les outils d’automatisation, de renforcer ma maîtrise de JavaScript
+      et TypeScript, et de mieux comprendre les enjeux numériques dans le secteur public.
+    </p>
+  </div>
+
+
+  <footer class="modern-footer" id="contact">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>À propos</h3>
+        <p>Portfolio créé dans le cadre du BTS SIO à la Joliverie</p>
+      </div>
+      <div class="footer-section">
+        <h3>Navigation</h3>
         <ul>
-          <li><a href="veille.html" class="fade-link">Veille Technologique</a></li>
           <li><a href="#p">Présentation</a></li>
-          <li><a href="#tp">Projet</a></li>
-          <li><a href="#contact">Me contacter</a></li>
+          <li><a href="#tp">Projets</a></li>
+          <li><a href="veille.html">Veille Technologique</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
-    </nav>
-
-    <header>
-      <div class="present">
-        <h4>Bonjour, je m'appelle</h4>
-        <h1>Lilo Noël</h1>
-        <h2>Je suis étudiant en 1<sup>ère</sup> année de BTS SIO</h2>
-        <h3>à La Joliverie</h3>
-        <h5>
-          J'ai dans l'idée de perfectionner mes compétences dans le domaine de l'informatique
-          pour me permettre de me rendre le plus utile possible
-        </h5>
-      </div>
-      <div id="particles-js"></div>
-    </header>
-
-    <div class="bar" id="prestransi"></div>
-
-    <div class="presentation" id="p">
-      <h2>Qui suis-je ?</h2>
-      <p>
-        Je suis un passionné d'informatique, ayant acquis une solide expérience en autodidacte 
-        dans des domaines variés tels que le JavaScript, le Python, le HTML et le CSS. Cette 
-        soif d'apprendre m'a naturellement conduit à poursuivre mes études en BTS Services 
-        Informatiques aux Organisations (SIO), où j'ai approfondi mes connaissances sur le 
-        développement d'applications sécurisées et la gestion des données de manière professionnelle.
-        <br>
-        <br>
-        Ce parcours m'a permis de développer des compétences techniques robustes et d'acquérir une 
-        vision complète des enjeux liés à la sécurité et à l'optimisation des systèmes informatiques. 
-        Je suis convaincu que l'informatique est le domaine dans lequel je m'épanouis le plus et où 
-        je peux apporter ma contribution la plus significative, en alliant créativité, rigueur et 
-        expertise technique.
-        <br>
-        <br>
-        Aujourd'hui, j'ai acquis de solides compétences en python, javascript, html, css, mais également en 
-        langages orientés objets tels que le C, le C++ ainsi que le C# dû à mes apprentissages personnels et l'approfondissement
-        grâce à mes études et les différents projets
-      </p>
-      <div class="CV">
-        <div>
-          <div>
-            <a href="CV_Lilo_NOEL.pdf" style="color: white;">CV French Version</a>
-          </div> 
-          <div>
-            <div id="download" style="text-align: center;"><a href="CV_Lilo_NOEL.pdf" style="color: white;">Télécharger</a></div>
-          </div>
+      <div class="footer-section">
+        <h3>Me suivre</h3>
+        <div class="social-links">
+          <a href="https://github.com/Aypixels" class="social-link">
+            <img src="github.webp" alt="GitHub">
+          </a>
+          <a href="https://www.instagram.com/noel_lilo/" class="social-link">
+            <img src="instagram.webp" alt="Instagram">
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=100092222206546" class="social-link">
+            <img src="facebook.png" alt="Facebook">
+          </a>
+          <a href="#" class="social-link">
+            <img src="linkedin.webp" alt="LinkedIn">
+          </a>
         </div>
-        <div>
-          <div>
-            <a href="CV_Lilo_NOEL_English_version.pdf" style="color: white;">CV English Version</a>
-          </div>
-          <div>
-            <div id="download" style="text-align: center;"><a href="CV_Lilo_NOEL_English_version.pdf" style="color: white;">Download</a></div>
-          </div>
-        </div>        
       </div>
     </div>
-
-    <div class="bar" id="projtransi"></div>
-
-    <div class="projet" id="tp">
-      <h2>Mes projets</h2>
-      <p>
-        La plupart des projets que j'ai entrepris n'ont pas spécialement abouti.
-        Mais ce n'est pas pour cela qu'ils ne m'ont pas apporté beaucoup ! Ils
-        m'ont permis d'en apprendre plus sur certains langages et à comment
-        réfléchir comme un développeur.
-      </p>
-      <ul>
-        <li>
-          <h3>Tic Tac Toe</h3>
-          <p>
-            Mon tout premier projet de code ! Il m'a permis de me familiariser
-            avec tout ce qui était développement web etc...
-          </p>
-          <a href="https://github.com/Aypixels/morpionstest" class="reveal">Le repos Github</a>
-          <br />
-          <a href="https://glitch.com/edit/#!/jeu-de-tictactoe" class="reveal">Le code source Glitch.com</a>
-          <br />
-          <a href="https://jeu-de-tictactoe.glitch.me" class="reveal">Le site du jeu !</a>
-        </li>
-        <li>
-          <h3>Site NSI</h3>
-          <p>
-            C'était un projet pour la NSI. On avait la possibilité de réaliser
-            un site web sur le sujet de notre choix. Je me suis donc dit qu'il
-            serait intéressant de réaliser un site pour faire découvrir la nsi.
-            Ce projet m'a permis d'en apprendre plus sur l'utilisation plus
-            approfondi sur le css et le html.
-          </p>
-          <a href="https://glitch.com/edit/#!/n-s-i" class="reveal"
-            >Le code source Glitch.com</a
-          >
-          <br />
-          <a href="https://n-s-i.glitch.me" class="reveal">Le site du projet !</a>
-        </li>
-        <li>
-          <h3>Mon Protfolio !</h3>
-          <p>
-            La création de mon portfolio était une expérience vraiment enrichissante
-            ! Elle m'a permis de revoir un peu tous les projets que j'ai
-            entrepris et ça m'a vraiment fait du bien, m'a rappelé de bons
-            souvenirs et m'a permis de continuer a revoir le css et le html !
-          </p>
-          <a href="https://glitch.com/edit/#!/blog-de-lilo" class="reveal"
-            >Le code source Glitch.com</a
-          >
-          <br />
-          <a href="https://blog-de-lilo.glitch.me" class="reveal">Le site du projet !</a>
-        </li>
-      </ul>
-      <h2>Les projets au BTS SIO</h2>
-      <p>
-        Les projets que j'ai réalisé en BTS SIO m'ont permis de me perfectionner
-        dans le domaine de l'informatique. J'ai pu apprendre à travailler en
-        équipe, à gérer des projets de A à Z, à m'organiser et à apprendre de
-        nouvelles choses.
-      </p>
-      <h2>1<sup>ère</sup> année</h2>
-      <ul>
-        <li>
-          <h3>Projet Python</h3>
-          <p>
-            Ce projet nous a permis d'appliquer les notions vues en cours,
-            et de les approfondir. Nous avons dû réaliser un programme en python
-            qui permettait de gérer une base de données. et d'en automatiser les tâches.
-          </p>
-          <a href="https://drive.google.com/drive/folders/1OaCqCRy6SjHdTuRUVJqk3oJZ-D4-LNAH?usp=sharing" class="reveal">
-            Lien du Google Drive 
-          </a>
-        </li>
-        <li>
-          <h3>Projet Java</h3>
-          <p>
-            Ce projet nous a permis de découvrir le langage Java, et de
-            réaliser un projet en équipe. Nous avons dû réaliser un programme
-            qui permettait de gérer une base de données, et d'y intégrer une base de donnée à l'aide des outils de swing et Netbeans.
-          </p>
-          <a href="https://drive.google.com/drive/folders/1aAYJw9VKe8vi3lftO81DEeI_XC5Ay8WG?usp=sharing" class="reveal">
-            Lien du Google Drive
-          </a>
-        </li>
-      </ul>
-      <h2>2<sup>ème</sup> année</h2>
-      <p>
-        Les projets de 2<sup>ème</sup> année ne sont pas encore réalisés, je ne peux donc pas encore les présenter.
-      </p>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Lilo NOEL - BTS SIO</p>
     </div>
+  </footer>
 
-    <div class="bar" id="prestransi"></div>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="particles.js"></script>
+  <script>
+    ScrollReveal().reveal('.reveal', {
+      delay: 100,
+      duration: 800,
+      distance: '40px',
+      origin: 'bottom',
+      easing: 'ease-out',
+      interval: 200, // <<< C’est cette ligne qui les révèle un à un
+      reset: false   // Met à true si tu veux que ça se rejoue à chaque scroll
+    });
+  </script>
 
+  <script>
+    ScrollReveal().reveal('.presentation', {
+      delay: 200,
+      duration: 1000,
+      origin: 'bottom',
+      distance: '50px',
+      easing: 'ease-in-out',
+      reset: false
+    });
 
-    <footer class="modern-footer" id="contact">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h3>À propos</h3>
-          <p>Portfolio créé dans le cadre du BTS SIO à la Joliverie</p>
-        </div>
-        <div class="footer-section">
-          <h3>Navigation</h3>
-          <ul>
-            <li><a href="#p">Présentation</a></li>
-            <li><a href="#tp">Projets</a></li>
-            <li><a href="veille.html">Veille Technologique</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h3>Me suivre</h3>
-          <div class="social-links">
-            <a href="https://github.com/Aypixels" class="social-link">
-              <img src="github.webp" alt="GitHub">
-            </a>
-            <a href="https://www.instagram.com/noel_lilo/" class="social-link">
-              <img src="instagram.webp" alt="Instagram">
-            </a>
-            <a href="https://www.facebook.com/profile.php?id=100092222206546" class="social-link">
-              <img src="facebook.png" alt="Facebook">
-            </a>
-            <a href="#" class="social-link">
-              <img src="linkedin.webp" alt="LinkedIn">
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 Lilo NOEL - BTS SIO</p>
-      </div>
-    </footer>
+    ScrollReveal().reveal('.projet', {
+      delay: 300,
+      duration: 1000,
+      origin: 'left',
+      distance: '60px',
+      easing: 'ease-in-out'
+    });
 
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="particles.js"></script>
-    <script>
-      ScrollReveal().reveal('.reveal', {
-        delay: 100,
-        duration: 800,
-        distance: '40px',
-        origin: 'bottom',
-        easing: 'ease-out',
-        interval: 200, // <<< C’est cette ligne qui les révèle un à un
-        reset: false   // Met à true si tu veux que ça se rejoue à chaque scroll
-      });
-    </script>
-    
-    <script>
-      ScrollReveal().reveal('.presentation', {
-        delay: 200,
-        duration: 1000,
-        origin: 'bottom',
-        distance: '50px',
-        easing: 'ease-in-out',
-        reset: false
-      });
-    
-      ScrollReveal().reveal('.projet', {
-        delay: 300,
-        duration: 1000,
-        origin: 'left',
-        distance: '60px',
-        easing: 'ease-in-out'
-      });
-    
-      ScrollReveal().reveal('footer', {
-        delay: 400,
-        duration: 500,
-        origin: 'bottom',
-        distance: '40px',
-        easing: 'ease-in-out'
-      });
-    
-      ScrollReveal().reveal('.present h1, .present h2, .present h3, .present h4, .present h5', {
-        interval: 100,
-        origin: 'top',
-        distance: '20px',
-        duration: 800,
-        reset: false
-      });
-    </script>
-    
-    <script>     
-        function toggleMenu() {
-            let rotated = false
+    ScrollReveal().reveal('footer', {
+      delay: 400,
+      duration: 500,
+      origin: 'bottom',
+      distance: '40px',
+      easing: 'ease-in-out'
+    });
 
-            const navLinks = document.querySelector('.nav-links');
-            navLinks.classList.toggle('open');
+    ScrollReveal().reveal('.present h1, .present h2, .present h3, .present h4, .present h5', {
+      interval: 100,
+      origin: 'top',
+      distance: '20px',
+      duration: 800,
+      reset: false
+    });
+  </script>
 
-            const menuIcon = document.querySelector('.menu-icon img');
-                        
-            if(rotated == false) {
-                rotated = true
-                menuIcon.classList.add('rotate');
+  <script>
+    function toggleMenu() {
+      let rotated = false
 
-                setTimeout(() => {
-                    menuIcon.classList.remove('rotate');
-                }, 500);
-            } else {
-                rotated = false
-                menuIcon.classList.add("rotateL")
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('open');
 
-                setTimeout(() => {
-                    menuIcon.classList.remove("rotateL")
-                })
-            }
-        }
-    </script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
-          // Effet de fondu à l'arrivée sur la page
+      const menuIcon = document.querySelector('.menu-icon img');
+
+      if (rotated == false) {
+        rotated = true
+        menuIcon.classList.add('rotate');
+
+        setTimeout(() => {
+          menuIcon.classList.remove('rotate');
+        }, 500);
+      } else {
+        rotated = false
+        menuIcon.classList.add("rotateL")
+
+        setTimeout(() => {
+          menuIcon.classList.remove("rotateL")
+        })
+      }
+    }
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Effet de fondu à l'arrivée sur la page
+      setTimeout(() => {
+        document.body.classList.add('fade-in');
+      }, 200); // Délai pour s'assurer que le CSS est appliqué
+
+      const links = document.querySelectorAll('.fade-link');
+      links.forEach(link => {
+        link.addEventListener('click', function (event) {
+          event.preventDefault();
+          const href = this.getAttribute('href');
+          document.body.classList.add('fade-out');
           setTimeout(() => {
-              document.body.classList.add('fade-in');
-          }, 200); // Délai pour s'assurer que le CSS est appliqué
-
-          const links = document.querySelectorAll('.fade-link');
-          links.forEach(link => {
-              link.addEventListener('click', function(event) {
-                  event.preventDefault();
-                  const href = this.getAttribute('href');
-                  document.body.classList.add('fade-out');
-                  setTimeout(() => {
-                      window.location.href = href;
-                  }, 500); // Durée de la transition
-              });
-          });
+            window.location.href = href;
+          }, 500); // Durée de la transition
+        });
       });
-    </script>
-  </body>
+    });
+  </script>
+</body>
+
 </html>
