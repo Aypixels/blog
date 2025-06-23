@@ -561,51 +561,77 @@ header {  background-color: rgba(16, 16, 16, 0.3);  height: 100vh;  color: #fff;
 
 .stage {
   background-color: rgba(16, 16, 16, 0.5);
-  height: auto;
-  padding: 30px;
-  transition: all 2s ease;
-  backdrop-filter: blur(30px);
-  color: white;
-  margin: 40px 0 0 0;
-  border-radius: 12px;
+  padding: 32px 24px;
+  border-radius: 14px;
   box-shadow: 0 8px 32px 0 rgba(37, 72, 169, 0.15);
+  color: #e0e0e0;
+  margin: 40px 0 0 0;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: box-shadow 0.3s, background 0.3s;
+  backdrop-filter: blur(24px);
 }
 
 .stage h2 {
   color: #638afd;
-  font-size: 2rem;
+  font-size: 2.1rem;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
 }
 
 .stage h3 {
   color: #2548a9;
-  font-size: 1.3rem;
-  margin-bottom: 15px;
-  margin-top: 10px;
+  font-size: 1.35rem;
+  margin-bottom: 12px;
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+.stage ul {
+  margin: 18px 0 18px 32px;
+  color: #b6c6e3;
+  font-size: 1.08em;
+  list-style: disc inside;
+  padding-left: 0;
+}
+
+.stage ul li {
+  margin-bottom: 8px;
+  line-height: 1.6;
 }
 
 .stage p {
-  font-size: 1.2rem;
+  font-size: 1.18rem;
   color: #e0e0e0;
-  margin: 20px 10px;
-  max-width: 80%;
+  margin: 18px 10px 10px 0;
+  max-width: 90%;
   line-height: 1.7;
   font-weight: 500;
 }
 
+.stage .stage-impact {
+  color: #638afd;
+  font-weight: 600;
+  display: block;
+  margin-top: 18px;
+  font-size: 1.08em;
+}
+
 @media screen and (max-width: 900px) {
   .stage {
-    padding: 15px;
-    margin: 20px 0 0 0;
+    padding: 16px 6px;
+    margin: 24px 0 0 0;
+    max-width: 98vw;
   }
   .stage h2 {
     font-size: 1.3rem;
   }
   .stage h3 {
-    font-size: 1.1rem;
+    font-size: 1.08rem;
   }
-  .stage p {
+  .stage p, .stage ul {
     font-size: 1rem;
     max-width: 100%;
   }
