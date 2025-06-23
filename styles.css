@@ -559,6 +559,58 @@ header {  background-color: rgba(16, 16, 16, 0.3);  height: 100vh;  color: #fff;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.stage {
+  background-color: rgba(16, 16, 16, 0.5);
+  height: auto;
+  padding: 30px;
+  transition: all 2s ease;
+  backdrop-filter: blur(30px);
+  color: white;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px 0 rgba(37, 72, 169, 0.15);
+}
+
+.stage h2 {
+  color: #638afd;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.stage h3 {
+  color: #2548a9;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.stage p {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+  margin: 20px 10px;
+  max-width: 80%;
+  line-height: 1.7;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 900px) {
+  .stage {
+    padding: 15px;
+    margin: 20px 0 0 0;
+  }
+  .stage h2 {
+    font-size: 1.3rem;
+  }
+  .stage h3 {
+    font-size: 1.1rem;
+  }
+  .stage p {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .footer-content {
     grid-template-columns: 1fr;
